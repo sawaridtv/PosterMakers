@@ -1,0 +1,54 @@
+
+{
+  "timezone": "Asia/Dhaka",
+
+  "poster": {
+    "width": 1080,
+    "height": 810,
+    "format": "PNG",
+    "watermark_enabled": true,
+    "background": "assets/background.jpg",
+    "watermark": "assets/watermark.png",
+    "font": "assets/oswald.regular.ttf"
+  },
+
+  "sources": {
+    "cricket": {
+      "enabled": true,
+      "provider": "cricbuzz"
+    },
+    "football": {
+      "enabled": true,
+      "provider": "footystream"
+    }
+  },
+
+  "repositories": {
+    "poster_branch": "main",
+    "poster_folder": "posters",
+    "json_branch": "main",
+    "json_file": "matches.json"
+  },
+
+  "schedule": {
+    "poster_check_minutes": 15,
+    "json_update_minutes": 5
+  },
+
+  "notifications": {
+    "football": {
+      "enabled": true,
+      "first_half_minutes": 45,
+      "half_time_minutes": 15
+    },
+    "cricket": {
+      "enabled": true,
+      "formats": [
+        "T10",
+        "T20",
+        "ODI",
+        "TEST"
+      ]
+    }
+  }
+}
